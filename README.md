@@ -2,84 +2,140 @@
 
 ## Overview
 
-Sukuna Finger Catching Game is an interactive game I developed using Scratch as part of my learning in Harvard's CS50 Introduction to Programming with Scratch course.
+Sukuna Finger Catching Game is an interactive game I developed using Scratch 3.0 while learning the fundamentals of programming through Harvard's CS50 Introduction to Programming with Scratch course.
 
-Inspired by the anime *Jujutsu Kaisen*, the game features Sukuna as the main character. Players control the character to collect fingers while avoiding missed objects. The game includes scoring, interactive gameplay, and separate victory and game-over screens.
+Inspired by the anime *Jujutsu Kaisen*, the game features Sukuna as the main character. Players control Sukuna to collect falling fingers while trying to avoid missing them. The game includes a collection system, missed-object tracking, and separate victory and game-over screens.
 
-I developed this project to apply fundamental programming concepts in a visual programming environment and gain experience designing a complete game from start to finish.
+I created this project to apply programming concepts such as loops, conditions, variables, events, and custom blocks in a practical and interactive way. It also gave me experience designing game mechanics, debugging scripts, and coordinating interactions between different sprites.
 
 ## Technologies Used
 
-- **Scratch 3.0:** Used to develop the game through block-based programming.
-- **Event-Driven Programming:** Used to coordinate interactions between sprites and game states.
-- **Visual Game Design:** Used to organize sprites, costumes, and backdrops into an interactive game.
+- **Scratch 3.0:** Visual programming environment used to develop the game.
+- **Block-Based Programming:** Used to implement character movement, object interactions, and game logic.
+- **Event-Driven Programming:** Used to coordinate gameplay through events and broadcast messages.
 
 ## Key Features
 
-- **Character Movement:** Players control Sukuna during gameplay.
-- **Collectible Objects:** Players collect fingers to progress through the game.
-- **Scoring System:** Variables track the player's progress.
-- **Missed-Object Tracking:** The game monitors missed fingers and ends when the loss condition is reached.
-- **Multiple Backdrops:** Separate screens are used for gameplay, victory, and game over.
-- **Broadcast Messages:** Events coordinate transitions between game states.
-- **Cloning:** Scratch clones are used as part of the game's mechanics.
-- **Custom Blocks:** User-defined blocks help organize the game's logic.
+- **Character Movement:** Players control Sukuna to collect falling fingers.
+- **Collectible Objects:** Fingers appear during gameplay and can be collected by the player.
+- **Progress Tracking:** Variables track the number of fingers collected and missed.
+- **Victory Condition:** The game displays a victory screen when the required collection goal is achieved.
+- **Game-Over Condition:** Missing three fingers ends the game.
+- **Multiple Backdrops:** Different backdrops are used for gameplay, victory, and game over.
+- **Broadcast Messages:** Coordinate transitions between different game states.
+- **Cloning:** Allows game objects to be created dynamically during gameplay.
+- **Custom Blocks:** Organize instructions into reusable sections.
+
+## Gameplay Screenshots
+
+### Main Gameplay
+
+The main gameplay screen shows Sukuna collecting falling fingers.
+
+![Sukuna Finger Catching Game - Main Gameplay](screenshots/gameplay.png)
+
+### Victory Screen
+
+The victory screen appears when the player successfully completes the collection objective.
+
+![Sukuna Finger Catching Game - Victory Screen](screenshots/victory.png)
+
+### Game-Over Screen
+
+The game-over screen appears when the player misses three fingers.
+
+![Sukuna Finger Catching Game - Game Over Screen](screenshots/game-over.png)
 
 ## How to Play
 
-1. Open the game in Scratch.
-2. Click the green flag to start.
+1. Open the project in Scratch.
+2. Click the green flag to start the game.
 3. Control Sukuna to collect the falling fingers.
-4. Collect the required fingers to reach the victory screen.
-5. Avoid missing three fingers, which triggers the game-over screen.
+4. Collect the required number of fingers to win.
+5. Avoid missing three fingers, as this triggers the game-over screen.
 6. Click the green flag to restart the game.
 
 ## Programming Concepts Used
 
-### Events and Broadcasts
+### 1. Events and Broadcast Messages
 
-The game uses Scratch events and broadcast messages to coordinate gameplay and transitions between different screens.
+The game uses Scratch events to start gameplay and broadcast messages to communicate between sprites.
 
-### Variables
+These messages help coordinate transitions between the gameplay, victory, and game-over screens.
 
-Variables store information about the game's progress, including collected and missed objects.
+### 2. Variables
 
-### Loops and Conditions
+Variables are used to track the player's progress, including the number of fingers collected and missed.
 
-Loops allow actions to repeat during gameplay, while conditional statements determine what happens when objects are collected, missed, or when the game ends.
+They also help determine when the game should end.
 
-### Cloning
+### 3. Loops
 
-Clones allow objects to be created during gameplay without manually adding a separate sprite for every instance.
+Loops allow instructions to run repeatedly during gameplay, supporting continuous game behavior and object interactions.
 
-### Custom Blocks
+### 4. Conditional Statements
 
-Custom blocks help organize related instructions and make the scripts easier to understand and maintain.
+Conditional statements are used to check whether fingers have been collected or missed and determine whether the player has won or lost.
+
+### 5. Cloning
+
+Cloning allows additional instances of game objects to appear without creating separate sprites manually.
+
+### 6. Custom Blocks
+
+Custom blocks organize related instructions into reusable sections, making the project easier to understand and modify.
 
 ## How to Run the Project
 
-1. Download the `Sukuna-Finger-Catching-Game.sb3` file from this repository.
-2. Visit [Scratch](https://scratch.mit.edu/projects/editor/).
-3. Select **File → Load from your computer**.
-4. Choose the downloaded `.sb3` file.
-5. Click the green flag to start playing.
+### Option 1: Open the Scratch Project File
+
+1. Download `Sukuna-Finger-Catching-Game.sb3` from this repository.
+2. Visit [Scratch Editor](https://scratch.mit.edu/projects/editor/).
+3. Click **File → Load from your computer**.
+4. Select the downloaded `.sb3` file.
+5. Click the green flag to start the game.
+
+No additional software or libraries are required.
+
+### Option 2: Play on Scratch
+
+If the project is published on Scratch, it can also be played directly in a web browser.
+
+*A direct Scratch project link can be added here after publication.*
+
+## Development Process
+
+I began by designing the basic gameplay concept and deciding how the player would interact with falling objects.
+
+I then created the character movement and finger-collection mechanics. After implementing these features, I introduced variables to track progress and added conditions to determine when the player should win or lose.
+
+One of the main challenges was coordinating Sukuna's visibility with the different game screens. During development, I encountered an issue where the character did not disappear correctly after the game ended and later did not reappear when restarting.
+
+I worked through these problems by reviewing the scripts, checking the relevant events, and adjusting how the character responded to changes in the game state.
+
+Testing and debugging these interactions helped me better understand how different Scratch scripts work together.
 
 ## What I Learned
 
-Developing this game helped me understand how different programming concepts work together in an interactive application.
+Developing this game strengthened my understanding of fundamental programming concepts and how they can be applied to interactive projects.
 
-I gained experience using events, variables, loops, conditional statements, broadcasts, clones, and custom blocks.
+Through this project, I learned how to:
 
-One of the most challenging parts was coordinating the character's behavior with the game's victory and game-over conditions. I also learned how to identify and fix problems when sprites did not appear or disappear at the correct time.
+- Use variables to store and update game information.
+- Apply loops and conditional statements to control gameplay.
+- Use events and broadcasts to coordinate multiple sprites.
+- Work with clones and custom blocks.
+- Implement victory and game-over conditions.
+- Debug problems involving sprite visibility and game-state transitions.
 
-This project strengthened my understanding of logical thinking, debugging, and event-driven programming.
+This project also helped me develop patience and problem-solving skills, particularly when identifying why certain scripts were not behaving as expected.
 
 ## Disclaimer
 
-This is a fan-made educational project inspired by *Jujutsu Kaisen*. It is not affiliated with or endorsed by the creators or rights holders of the series.
+This is a fan-made educational project inspired by *Jujutsu Kaisen*. It was created for programming practice and is not affiliated with or endorsed by the creators or rights holders of the series.
 
 ## Author
 
 **Veer Sinha**
 
-Developed as part of my independent programming practice and learning through CS50's Introduction to Programming with Scratch.
+Developed as part of my programming practice while studying Harvard's CS50 Introduction to Programming with Scratch.
